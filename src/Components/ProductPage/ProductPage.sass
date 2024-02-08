@@ -1,0 +1,40 @@
+@import "src/Styles/variables.sass"
+
+.page-details-wrapper
+	display: flex
+	width: 100%
+	background: #fff
+	border-radius: 15px
+	padding: 20px
+	position: relative
+	box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.2)
+
+	.return-link
+		position: absolute
+		right: 30px
+		bottom: 20px
+		font-size: 18px
+		text-decoration: none
+		color: #000000
+		transition: all .3s ease
+
+		&:hover
+			color: $primary
+
+	.left
+		margin-right: 25px
+
+		img
+			width: 300px
+			height: 250px
+			border-radius: 15px
+
+	.right
+		width: calc(100% - 350px)
+
+		.info-container
+			display: flex
+			flex-direction: column
+
+			.name
+				font-size: 24px

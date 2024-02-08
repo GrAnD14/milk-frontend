@@ -1,0 +1,26 @@
+@import "src/Styles/variables.sass"
+
+.search-bar-wrapper
+	input
+		outline: none
+		padding: 8px 16px
+		font-size: 16px
+		border-radius: 15px
+		margin-right: 25px
+		transition: all .3s ease
+
+		&:focus
+			border-color: $primary
+
+	button
+		padding: 8px 16px
+		border-radius: 15px
+		outline: none
+		border: none
+		cursor: pointer
+		background: $primary
+		color: #fff
+		transition: all .3s ease
+
+		&:hover
+			transform: scale(1.1)

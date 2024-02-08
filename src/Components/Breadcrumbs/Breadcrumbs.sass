@@ -1,0 +1,50 @@
+@import "src/Styles/variables.sass"
+
+.breadcrumbs-wrapper
+	margin-bottom: 50px
+	display: flex
+
+	@media screen and (max-width: 520px)
+		margin-bottom: 25px
+		justify-content: center
+
+	.breadcrumbs
+		border-radius: 15px
+		box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.2)
+		width: fit-content
+		background: #fff
+		padding: 10px 24px
+		display: flex
+
+		@media screen and (max-width: 520px)
+			padding: 10px 12px
+
+		.crumb
+			display: flex
+			align-items: center
+
+			&:last-child:after
+				display: none
+
+			.home-icon
+				color: $primary
+				margin-right: 10px
+				font-size: 20px
+
+				@media screen and (max-width: 479px)
+					margin-right: 5px
+
+			.chevron-icon
+				color: $primary
+
+			a
+				font-size: 20px
+				text-decoration: none
+				display: flex
+				align-items: center
+				color: $primary
+				padding: 0 10px
+
+				@media screen and (max-width: 479px)
+					font-size: 16px
+					padding: 0 5px
