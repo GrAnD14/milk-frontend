@@ -3,7 +3,7 @@ import "./Styles/Reset.sass"
 import {useState} from "react";
 import Header from "./Components/Header/Header";
 import Breadcrumbs from "./Components/Breadcrumbs/Breadcrumbs";
-import {BrowserRouter, Route, Routes, Navigate} from 'react-router-dom';
+import {HashRouter, Route, Routes, Navigate} from 'react-router-dom';
 import ProductsList from "./Components/ProductsList/ProductsList";
 import ProductPage from "./Components/ProductPage/ProductPage";
 import {Product} from "./Types";
@@ -21,7 +21,7 @@ function App() {
 
                 <div className={"content-wrapper"}>
 
-                    <BrowserRouter basename="/milk-frontend">
+                    <HashRouter>
 
                         <Breadcrumbs selectedProduct={selectedProduct} setSelectedProduct={setSelectedProduct}/>
 
@@ -35,7 +35,7 @@ function App() {
 
                         </Routes>
 
-                    </BrowserRouter>
+                    </HashRouter>
 
                 </div>
 
