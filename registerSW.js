@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/milk-frontend/sw.js', { scope: '/milk-frontend/' })})}
